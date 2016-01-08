@@ -1,0 +1,20 @@
+#!/bin/bash
+
+pbpaste |
+
+tr '\r' '\n' | #DOS to UNIX
+
+sed "s/$(printf '\t')/ \& /g" |
+
+sed '1 i\
+\\toprule\
+' |
+
+sed '3 i\
+\\midrule\
+' |
+
+sed '$ a\
+\\bottomrule\' | pbcopy
+
+echo Your table is ready to be paste in latex
