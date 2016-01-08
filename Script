@@ -17,4 +17,4 @@ sed '3 i\
 sed '$ a\
 \\bottomrule\' | pbcopy
 
-echo Your table is ready to be paste in latex
+echo Your table is ready to be pasted in latex
