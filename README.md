@@ -1,7 +1,7 @@
 # excel2latexTable_MAC
 A shell script to convert an Excel table to latex format using the Clipboard.
 
-Run with mac os X (El capitan)
+Run with mac OS X (El capitan) using homebrew bash
 
 How to use this script:
 1.Copy your table in Excel  
