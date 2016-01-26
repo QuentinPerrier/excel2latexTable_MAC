@@ -22,6 +22,7 @@ sed 's/^/	/' | pbcopy  #To indent
 
 var1=$(pbpaste) 
 len=$(echo "$var1" | sed -n '2p' | grep -o "&" | wc -l) #count the number of column
+len=len+1
 ch='l'
 col=$(printf '%*s' "$len" | tr ' ' "$ch")
 
