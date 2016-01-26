@@ -11,17 +11,17 @@ How to use this script:
 
 Example:  
 
-\begin{table} \\
-	\centering \\
-	\caption{} \\
-	\label{} \\
-	\begin{tabular}{||} \\
-		\toprule \\
-		107 & 719 & 8 \\
-		\midrule
-		33 & 19 & 67 \\
-		17 & 6 & 13 \\
-		\bottomrule \\
-	\end{tabular} \\
-\end{table} \\
+\begin{table}  
+	\centering  
+	\caption{}  
+	\label{}   
+	\begin{tabular}{||}   
+		\toprule \\  
+		107 & 719 & 8 \\  
+		\midrule    
+		33 & 19 & 67 \\  
+		17 & 6 & 13 \\  
+		\bottomrule \\  
+	\end{tabular}   
+\end{table}   
  
