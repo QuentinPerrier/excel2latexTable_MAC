@@ -11,11 +11,17 @@ How to use this script:
 
 Example:  
 
-\toprule  
-Sector a & Sector b & Sector c  
-\midrule  
-127,0 & 26,0 & -1,1  
-13,3 & 161,6 & 14,5  
-11,0 & 22,1 & 18,6  
-5,2 & 11,0 & 0,9  
-\bottomrule\  
+\begin{table}
+	\centering
+	\caption{}
+	\label{}
+	\begin{tabular}{||}
+		\toprule
+		107 & 719 & 8 \\
+		\midrule
+		33 & 19 & 67 \\
+		17 & 6 & 13 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+ 
