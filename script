@@ -1,0 +1,53 @@
+#!/bin/bash
+
+pbpaste |
+
+tr '\r' '\n' | #conversion from DOS to UNIX
+
+sed 's/$/ \\\\/' |
+
+sed "s/$(printf '\t')/ \& /g" |
+
+sed '1 i\
+\\toprule' |
+
+sed '3 i\
+\\midrule' |
+
+sed '$ a\
+\\bottomrule' | 
+
+sed 's/^/	/' | pbcopy  #To indent
+
+
+var1=$(pbpaste) 
+len=$(echo "$var1" | sed -n '2p' | grep -o "&" | wc -l) #count the number of column
+ch='|'
+col=$(printf '%*s' "$len" | tr ' ' "$ch")
+
+echo "$var1" |
+
+sed '1 i\
+\\centering\
+\\caption\{\}\
+\\label\{\}\
+\\begin{tabular}{'"$col"'}
+' |
+
+sed '$ a\
+\\end{tabular}
+' | 
+
+sed 's/^/	/' | 
+
+sed '1 i\
+\\begin{table}
+' |
+
+sed '$ a\
+\\end{table}' | 
+
+pbcopy
+
+
+echo "Your table is ready to be paste in latex"
