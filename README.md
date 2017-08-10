@@ -5,14 +5,14 @@ Made for mac OS X with homebrew bash.
 
 ## How to use this script:
 
-1.Select your table in Excel and copy it
-2.Run the script  
-3.Go to your latex file and do "Paste"
+1. Select your table in Excel and copy it
+2. Run the script  
+3. Go to your latex file and do "Paste"
 
 ## Tip
 
 Copy the file in a folder whose path is included in your environnement for immediate use.
-For example, I copied the file in the bin folder (/Users/quentin/bin). Then I can simple use the terminal and type "bash excel2latex" to run 
+For example, I copied the file in the bin folder (/Users/quentin/bin). Then I can simple use the terminal and type "bash excel2latex" to run the script.
 
 ## Example of the result:  
 
