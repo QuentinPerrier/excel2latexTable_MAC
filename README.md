@@ -1,15 +1,20 @@
 # excel2latexTable_MAC
-A shell script to convert an Excel table to latex format using the Clipboard.
+A shell script to convert an Excel table to latex format using the clipboard.
 
-Run with mac OS X (El capitan) using homebrew bash
+Made for mac OS X with homebrew bash.
 
-How to use this script:
-1.Copy your table in Excel  
+## How to use this script:
+
+1.Select your table in Excel and copy it
 2.Run the script  
-3.Paste into latex  
+3.Go to your latex file and do "Paste"
 
+## Tip
 
-Example:  
+Copy the file in a folder whose path is included in your environnement for immediate use.
+For example, I copied the file in the bin folder (/Users/quentin/bin). Then I can simple use the terminal and type "bash excel2latex" to run 
+
+## Example of the result:  
 
 \begin{table}  
 	\centering  
